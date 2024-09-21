@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+#todo{
+  font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+
+::-webkit-scrollbar{
+  width: 0.1px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.struct {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(25,24,37,255);
+}
+.struct > img {
+  height: 15rem;
+  width: 100vw;
+}
+
+.main {
+  width: 30rem;
+  height: 80vh;
+  /* height: 40vh; */
+  position: absolute;
+  left: 32rem;
+  top: 5rem;
+  /* border: 2px solid white; */
+  color: beige;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.typing {
+  margin-top: 2rem;
+  width: 30rem;
+  height: 3rem;
+  /* padding: 2rem; */
+  border-radius: 4px;
+  margin-bottom: 2.5rem;
+  background-color: rgba(36,38,60,255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 13px 27px 0px #000000;
+}
+
+textarea{
+  /* background-color: red; */
+  resize: none;
+}
+
+button {
+  margin-left: 1rem;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.tasks {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: 2rem;
+  /* color: black; */
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgba(36,38,60,255);
+  position: relative;
+  box-shadow: 0px 13px 27px 0px #000000;
+
+}
+
+.task-item label {
+  margin-right: 10px;
+}
+
+#cross {
+  opacity: 0;
+  visibility: hidden;
+  background: none;
+  margin-left: 2rem;
+  /* border: none; */
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.task-item:hover #cross {
+  opacity: 1;
+  visibility: visible;
+}
+
+
